@@ -226,6 +226,43 @@ This ensures **platform liquidity sustainability** while maintaining fair worker
 | Deployment    | Docker / Cloud VM         |
 
 ---
+## 🛡 Adversarial Defense & Anti-Spoofing Strategy
+# 1. The Differentiation
+ShieldPay AI goes beyond simple GPS verification. Our architecture fuses **multi-sensor mobility signals, delivery activity logs, and environmental disruption data** to distinguish between:
+
+A genuinely stranded worker caught in a red-alert weather zone
+
+A bad actor spoofing GPS coordinates while inactive at home
+
+We achieve this by cross-validating **movement consistency, delivery task signals, and environmental consensus models**. If GPS says “severe flood zone” but accelerometer, gyroscope, and parcel activity show inactivity, the system flags a mismatch.
+
+# 2. The Data
+To detect fraud rings, ShieldPay AI analyzes:
+
+**Mobility sensor patterns** (accelerometer, gyroscope, step count)
+
+**Delivery activity signals** (parcel scans, warehouse check-ins, route logs)
+
+**Network anomalies** (sudden GPS jumps, repeated spoofing apps detected)
+
+**Environmental consensus** (weather API + crowd-sourced disruption reports)
+
+**Graph-based clustering** (detecting multiple claims from the same locality/time window)
+
+This multi-layer dataset ensures that even coordinated syndicates cannot rely on GPS spoofing alone.
+
+# 3. The UX Balance
+We designed the workflow to protect honest workers while defending against fraud:
+
+**Soft Verification Tier**: Flagged claims trigger lightweight checks (e.g., SMS verification, activity confirmation) instead of outright denial.
+
+**Transparency Dashboard**: Workers see why their claim was flagged (e.g., “GPS mismatch with mobility sensor”).
+
+**Graceful Handling of Network Drops**: If a worker’s device loses connectivity during severe weather, the system uses historical reliability index and peer disruption consensus to avoid unfair penalties.
+
+This balance ensures **fraud resilience without eroding worker trust**.
+
+---
 
 ## 🎥 Demo Flow
 
